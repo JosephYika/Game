@@ -47,12 +47,9 @@ public class Level2_MovementControlStatic : MonoBehaviour
     {
         if (pianoKey.CompareTagsExtension())
         {
-            Debug.Log("KOlIZJA : " + pianoKey.name);
             _spawner.DestroyKey();
+            Debug.Log("STATIC : NOTE DESTROYED");
         }
     }
     #endregion
 }
-
-
-

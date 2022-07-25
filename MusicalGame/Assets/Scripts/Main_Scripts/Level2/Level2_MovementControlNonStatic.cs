@@ -3,6 +3,7 @@
 */
 
 
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -26,6 +27,8 @@ public class Level2_MovementControlNonStatic : MonoBehaviour
     public float respawnTime = 4.0f;
 
     private Level2_SpawnerNonStatic _spawner;
+
+    private ScorePoint changeIntervalText;
     #endregion
 
     #region Unity Methods
@@ -34,6 +37,7 @@ public class Level2_MovementControlNonStatic : MonoBehaviour
     void Start()
     {
         _spawner = FindObjectOfType<Level2_SpawnerNonStatic>();
+        changeIntervalText = FindObjectOfType<ScorePoint>();
     }
 
     // Update is called once per frame
@@ -56,28 +60,26 @@ public class Level2_MovementControlNonStatic : MonoBehaviour
             moved = true;
         }
 
-        // If key has been moved in current frame:
-        //      Calculate index from position.
-        //      Destroy current key
-        //      Generate new key based on calculated index
 
         if (moved)
         {
-            var index = (int)((transform.position.x - minimumX_Negative) / XIncrement);
-            _spawner.DestroyKey();
-            _spawner.ReplaceExistingKey(index, transform.position);
+            _spawner.DestroyNote();
+            var note = GenericScript.CalculateNoteNameFromPosition(transform.position.x, "Sharp");
+            _spawner.ReplaceExistingNote(note, transform.position);
         }
     }
 
     void OnTriggerEnter2D(Collider2D pianoKey)
     {
-
         if (pianoKey.CompareTagsExtension())
         {
-            Debug.Log("COLLISION + " + pianoKey.name);
-
-            _spawner.DestroyKey();
+            _spawner.DestroyNote();
+            Debug.Log("NON STATIC : NOTE DESTROYED"); 
+            _spawner.GenerateNewNote();
         }
+        changeIntervalText.ChangeIntervalText();
     }
+
+
     #endregion
 }

@@ -39,4 +39,9 @@ public class ScoreScript : MonoBehaviour
         scoreOnTheScreen.text = ScoreBoardStatic.ScoreAPoint.ToString();
     }
     #endregion
+
+    //public void ColissionDetected(ScoreScriptC_Sharp scoreScriptC_Sharp)
+    //{
+
+    //}
 }

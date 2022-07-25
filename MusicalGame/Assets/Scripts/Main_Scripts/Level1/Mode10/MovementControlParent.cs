@@ -18,8 +18,8 @@ public class MovementControlParent : MonoBehaviour
     public float velocity;
     public float speed;
 
-    public float maximumBorderHeight;
-    public float minimumBorderHeight;
+    public float maximumX_Positive;
+    public float minimumX_Negative;
 
     private float previousTime;
     public float fallTime = 0.8f;
@@ -27,6 +27,9 @@ public class MovementControlParent : MonoBehaviour
     public float respawnTime = 4.0f;
 
     private GameObject _note;
+    private KeyboardLerpMovement move;
+
+    
     #endregion
 
     #region Unity Methods
@@ -34,6 +37,7 @@ public class MovementControlParent : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        move = FindObjectOfType<KeyboardLerpMovement>();
         
     }
 
@@ -47,18 +51,19 @@ public class MovementControlParent : MonoBehaviour
 
 
 
-        if (Input.GetKeyDown(KeyCode.RightArrow) && transform.position.x < maximumBorderHeight)
+        if (Input.GetKeyDown(KeyCode.RightArrow) && transform.position.x < maximumX_Positive)
         {
             targetPos = new Vector2(transform.position.x + XIncrement, transform.position.y);
             transform.position = targetPos;
         }
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        if (Input.GetKeyDown(KeyCode.LeftArrow) && transform.position.x > minimumX_Negative)
         {
             targetPos = new Vector2(transform.position.x - XIncrement, transform.position.y);
             transform.position = targetPos;
         }
 
 
+        
 
 
     }
@@ -74,8 +79,12 @@ public class MovementControlParent : MonoBehaviour
             {
 
                 Destroy(_note);
-               
+
             }
+            
+            move.MovetoNextPosition();
+            Debug.Log("Move Position triggered");
+            
             
         }
         
