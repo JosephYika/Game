@@ -23,9 +23,9 @@ public class ChangeIntervalText : MonoBehaviour
 
         intervalList = new List<string>();
         intervalList.Add("Minor 2nd <br><sprite=4><br>");
-        intervalList.Add("Major 2nd <sprite=2>");
-        intervalList.Add("Minor 2nd <sprite=4>");
-        intervalList.Add("Major 2nd <sprite=2>");
+        intervalList.Add("Major 2nd <br><sprite=4><br><sprite=2>");
+        intervalList.Add("Minor 2nd <br><sprite=4><br><sprite=4>");
+        intervalList.Add("Major 2nd <br><sprite=4><br><sprite=2>");
 
 
     }
