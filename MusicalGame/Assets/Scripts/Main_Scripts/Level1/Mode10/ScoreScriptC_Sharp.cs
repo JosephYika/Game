@@ -10,7 +10,7 @@ public class ScoreScriptC_Sharp : MonoBehaviour
 {
     #region Variables
     public TextMeshProUGUI scoreOnTheScreen;
-    public GameObject keyCSharp;
+ //   public GameObject keyCSharp;
     #endregion
 
     #region Unity Methods

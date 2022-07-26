@@ -21,7 +21,7 @@ public class ScoreScript : MonoBehaviour
     void Start()
     {
         ScoreBoardStatic.ResetPoints();
-        scoreOnTheScreen.text = ScoreBoardStatic.ScoreAPoint.ToString();
+      //  scoreOnTheScreen.text = ScoreBoardStatic.ScoreAPoint.ToString();
     }
 
     public void OnTriggerEnter2D(Collider2D note) // if my key collides with the note ( the note that is coming down from the top) do the code inside

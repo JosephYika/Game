@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class ScorePoint : MonoBehaviour
+public class ChangeIntervalText : MonoBehaviour
 {
     #region Variables
     public TextMeshProUGUI Interval;
@@ -16,33 +16,33 @@ public class ScorePoint : MonoBehaviour
     #endregion
 
     #region Unity Methods
-	
+
     // Start is called before the first frame update
     void Start()
     {
 
         intervalList = new List<string>();
-        intervalList.Add("Minor 2nd");
-        intervalList.Add("Major 2nd");
-        intervalList.Add("Minor 3rd");
-        intervalList.Add("Major 3rd");
-        
+        intervalList.Add("Minor 2nd <br><sprite=4><br>");
+        intervalList.Add("Major 2nd <sprite=2>");
+        intervalList.Add("Minor 2nd <sprite=4>");
+        intervalList.Add("Major 2nd <sprite=2>");
+
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
-    public void ChangeIntervalText()
+    public void GenerateNewIntervalOnTheScreen()
     {
 
-        Interval.text = intervalList[Random.Range(0, 3)];
+        Interval.text = intervalList[Random.Range(0,4)];
     }
 
-    
-   
 
     #endregion
+
 }

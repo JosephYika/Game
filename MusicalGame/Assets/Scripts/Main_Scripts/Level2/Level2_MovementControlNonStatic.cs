@@ -28,7 +28,7 @@ public class Level2_MovementControlNonStatic : MonoBehaviour
 
     private Level2_SpawnerNonStatic _spawner;
 
-    private ScorePoint changeIntervalText;
+    private ChangeIntervalText changeIntervalText;
     #endregion
 
     #region Unity Methods
@@ -37,7 +37,7 @@ public class Level2_MovementControlNonStatic : MonoBehaviour
     void Start()
     {
         _spawner = FindObjectOfType<Level2_SpawnerNonStatic>();
-        changeIntervalText = FindObjectOfType<ScorePoint>();
+        changeIntervalText = FindObjectOfType<ChangeIntervalText>();
     }
 
     // Update is called once per frame
@@ -67,6 +67,8 @@ public class Level2_MovementControlNonStatic : MonoBehaviour
             var note = GenericScript.CalculateNoteNameFromPosition(transform.position.x, "Sharp");
             _spawner.ReplaceExistingNote(note, transform.position);
         }
+
+       
     }
 
     void OnTriggerEnter2D(Collider2D pianoKey)
@@ -77,7 +79,7 @@ public class Level2_MovementControlNonStatic : MonoBehaviour
             Debug.Log("NON STATIC : NOTE DESTROYED"); 
             _spawner.GenerateNewNote();
         }
-        changeIntervalText.ChangeIntervalText();
+        changeIntervalText.GenerateNewIntervalOnTheScreen();
     }
 
 

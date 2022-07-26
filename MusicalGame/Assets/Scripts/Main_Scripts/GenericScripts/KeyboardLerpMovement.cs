@@ -11,10 +11,10 @@ public class KeyboardLerpMovement : MonoBehaviour
 {
     #region Variables
 
-    public Vector3 endPosition = new Vector3(0, 0, 0);
+    public Vector3 endPosition;
     public List<Vector3> endPositions;
     private Vector3 startPosition;
-    private float desiredDuration = 2f;
+    private float desiredDuration = 4f;
     private float elapsedTime;
     #endregion
 
@@ -24,13 +24,14 @@ public class KeyboardLerpMovement : MonoBehaviour
     void Start()
     {
         endPositions = new List<Vector3>();
-        endPositions.Add(new Vector3(-16.5f, -0.1688532f, 0));
-        endPositions.Add(new Vector3(-14.5f, -0.1688532f, 0));
-        endPositions.Add(new Vector3(-12.5f, -0.1688532f, 0));
+        endPositions.Add(new Vector3(-16.5f, -0.1688532f, 0));      
+        endPositions.Add(new Vector3(-12.5f, -0.1688532f, 0));       
         endPositions.Add(new Vector3(-8.5f, -0.1688532f, 0));
-        endPositions.Add(new Vector3(-4.5f, -0.1688532f, 0));
+        endPositions.Add(new Vector3(-4.5f, -0.1688532f, 0));        
+        endPositions.Add(new Vector3(-2.5f, -0.1688532f, 0));     
         endPositions.Add(new Vector3(1.5f, -0.1688532f, 0));
-        
+
+
     }
 
     // Update is called once per frame
@@ -49,7 +50,7 @@ public class KeyboardLerpMovement : MonoBehaviour
         float percentageComplete = elapsedTime / desiredDuration;
         endPosition = endPositions[Random.Range(0, 5)];
 
-        while (transform.position.x < endPosition.x - 0.1 || transform.position.x > endPosition.x + 0.1) 
+        while (transform.position.x < endPosition.x - 0.01 || transform.position.x > endPosition.x + 0.01) 
         {
             startPosition = transform.position;            
             transform.position = Vector3.Lerp(startPosition,endPosition, percentageComplete);
