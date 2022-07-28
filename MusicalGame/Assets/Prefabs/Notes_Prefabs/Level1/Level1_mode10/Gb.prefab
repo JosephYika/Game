@@ -101,7 +101,7 @@ MonoBehaviour:
   XIncrement: 2
   velocity: 0
   speed: 4
-  maximumX_Positive: 12
+  maximumX_Positive: 14
   minimumX_Negative: -9
   fallTime: 0.8
   respawnTime: 2

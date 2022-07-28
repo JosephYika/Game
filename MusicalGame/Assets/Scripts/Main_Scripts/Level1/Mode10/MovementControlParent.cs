@@ -64,9 +64,9 @@ public class MovementControlParent : MonoBehaviour
             transform.position = targetPos;
         }
 
-       
-        
 
+
+        
 
     }
 

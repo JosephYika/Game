@@ -7,6 +7,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class ScoreScript : MonoBehaviour
 {
@@ -23,6 +24,10 @@ public class ScoreScript : MonoBehaviour
         ScoreBoardStatic.ResetPoints();
       //  scoreOnTheScreen.text = ScoreBoardStatic.ScoreAPoint.ToString();
     }
+    private void Update()
+    {
+        ScoreBoardStatic.ChangeScene();
+    }
 
     public void OnTriggerEnter2D(Collider2D note) // if my key collides with the note ( the note that is coming down from the top) do the code inside
     {
@@ -37,11 +42,12 @@ public class ScoreScript : MonoBehaviour
             
         }
         scoreOnTheScreen.text = ScoreBoardStatic.ScoreAPoint.ToString();
+       
     }
     #endregion
 
     //public void ColissionDetected(ScoreScriptC_Sharp scoreScriptC_Sharp)
     //{
-
+       
     //}
 }

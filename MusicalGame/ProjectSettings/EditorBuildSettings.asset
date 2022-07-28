@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Official_Scenes/Level1/Level1_IntermediaryModeWhite.unity
+    guid: b81babbd3d5b1b647aeb9ba789c6da21
+  - enabled: 1
+    path: Assets/Scenes/Official_Scenes/Level1/Level1_Mode1.unity
+    guid: 2884e6ac182fca84487042d5fef72572
+  - enabled: 1
+    path: Assets/Scenes/Official_Scenes/Level1/Level1_Mode2.unity
+    guid: 9fbe3a21b9d69d047a5bdc821c9c93c5
   m_configObjects: {}
