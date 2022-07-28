@@ -28,18 +28,19 @@ public static class ScoreBoardStatic
 
     public static void ChangeScene()
     {
-        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level1_IntermediaryModeWhite") && scoreAPoint == 2)
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level1_IntermediaryModeWhite") && scoreAPoint == 2) //15
         {
            
                 SceneManager.LoadScene("Level1_Mode1");
             
         }
-        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level1_Mode1") && scoreAPoint == 2)
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level1_Mode1") && scoreAPoint == 2) //15
         {
 
             SceneManager.LoadScene("Level1_Mode2");
 
         }
+
 
     }
     
