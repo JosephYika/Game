@@ -14,4 +14,55 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Official_Scenes/Level1/Level1_Mode2.unity
     guid: 9fbe3a21b9d69d047a5bdc821c9c93c5
+  - enabled: 1
+    path: Assets/Scenes/Official_Scenes/Level1/Level1_Mode3.unity
+    guid: 64fdda8ee2374b446a190d578efefa59
+  - enabled: 1
+    path: Assets/Scenes/Official_Scenes/Level1/Level1_Mode4.unity
+    guid: f225b33ea59fb484c8cd25616db711e4
+  - enabled: 1
+    path: Assets/Scenes/Official_Scenes/Level1/Level1_Mode8_Slow.unity
+    guid: bda3ac26ab318684fb7b4a922723e920
+  - enabled: 1
+    path: Assets/Scenes/Official_Scenes/Level1/Level1_Mode8_Faster.unity
+    guid: 2244dd53027c38341b055620346f7402
+  - enabled: 1
+    path: Assets/Scenes/Official_Scenes/Level1/Level1_Mode8_Fast.unity
+    guid: fbb95e3f9dbf4f24185bc41b53ca93c8
+  - enabled: 1
+    path: Assets/Scenes/Official_Scenes/Level1/Level1_IntermediaryModeBlack.unity
+    guid: 2f68e68ae6de21a4593eeaae2906c403
+  - enabled: 1
+    path: Assets/Scenes/Official_Scenes/Level1/Level1_Mode5.unity
+    guid: c6984e2954955044c9e2fa82649d2cee
+  - enabled: 1
+    path: Assets/Scenes/Official_Scenes/Level1/Level1_Mode6.unity
+    guid: 5835acfa40ff4904b9b04b21e4c4475e
+  - enabled: 1
+    path: Assets/Scenes/Official_Scenes/Level1/Level1_Mode7.unity
+    guid: e33ec36cd31b81243a5a380f3147cb5c
+  - enabled: 1
+    path: Assets/Scenes/Official_Scenes/Level1/Level1_Mode9_Slow.unity
+    guid: 5950a816e3b0d8f468afe495c1b4349b
+  - enabled: 1
+    path: Assets/Scenes/Official_Scenes/Level1/Level1_Mode9_Faster.unity
+    guid: 1313afc7134c094438d8f41d0048a0e0
+  - enabled: 1
+    path: Assets/Scenes/Official_Scenes/Level1/Level1_Mode9_Fast.unity
+    guid: 940b42fd2fbc8584b8f87988f64de141
+  - enabled: 1
+    path: Assets/Scenes/Official_Scenes/Level1/Level1_Mode10_White_Slow.unity
+    guid: 1c9a3a316ea135949a90f354a2d67a80
+  - enabled: 1
+    path: Assets/Scenes/Official_Scenes/Level1/Level1_Mode10_White_Faster.unity
+    guid: 61f64c1407e1dda43b701319481e0a7b
+  - enabled: 1
+    path: Assets/Scenes/Official_Scenes/Level1/Level1_Mode10_White_Fast.unity
+    guid: 9442edfee51c5b34198188f7c90cb04f
+  - enabled: 1
+    path: Assets/Scenes/Official_Scenes/Level1/Level1_Mode10_Black_Slow.unity
+    guid: d50ce6d6cb2258842b69efdf0ef4c5b7
+  - enabled: 1
+    path: Assets/Scenes/Official_Scenes/Level1/Level1_Mode10_Black_Fast.unity
+    guid: bd0a031843135894888fb561af174c11
   m_configObjects: {}

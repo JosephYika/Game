@@ -15,8 +15,10 @@ public class MovementControl : MonoBehaviour
     private Vector2 targetPos;
     public float XIncrement;
 
-    public float velocity;
+   // public float velocity;
     public float speed;
+    public float maxSpeed;
+    
 
     public float maximumX_Positive;
     public float minimumX_Negative;
@@ -27,14 +29,16 @@ public class MovementControl : MonoBehaviour
     public float respawnTime = 4.0f;
 
     private Spawner spawner;
+    
     #endregion
 
     #region Unity Methods
-	
+
     // Start is called before the first frame update
     void Start()
     {
         StartCoroutine(keyWave());
+        
     }
 
     // Update is called once per frame
@@ -42,7 +46,7 @@ public class MovementControl : MonoBehaviour
     {
         //  transform.position = Vector2.MoveTowards(transform.position, targetPos, velocity * Time.deltaTime);
 
-
+        
         transform.Translate(Vector2.down * speed * Time.deltaTime);
         
 
@@ -73,9 +77,9 @@ public class MovementControl : MonoBehaviour
             Debug.Log("The note is destroyed!");
         }
 
-      
-
         
+
+
 
     }
 

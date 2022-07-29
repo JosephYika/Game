@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6072961587304924405}
   - component: {fileID: 2394083437565897089}
-  - component: {fileID: 6168010488805345846}
   - component: {fileID: -5892642329481732454}
   - component: {fileID: -7025507393042775074}
   m_Layer: 0
@@ -87,25 +86,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6168010488805345846
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4601549306753700854}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca98ff612be80a44ea2ec107729ea811, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  XIncrement: 2
-  velocity: 0
-  speed: 4
-  maximumX_Positive: 12
-  minimumX_Negative: -9
-  fallTime: 0.8
-  respawnTime: 4
 --- !u!61 &-5892642329481732454
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -144,10 +124,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca98ff612be80a44ea2ec107729ea811, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  XIncrement: 0
+  XIncrement: 2
   velocity: 0
-  speed: 0
-  maximumX_Positive: 0
-  minimumX_Negative: 0
+  speed: 2
+  maximumX_Positive: 12
+  minimumX_Negative: -9
   fallTime: 0.8
-  respawnTime: 4
+  respawnTime: 6

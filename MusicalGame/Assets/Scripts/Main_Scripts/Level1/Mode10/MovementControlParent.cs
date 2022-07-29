@@ -15,8 +15,9 @@ public class MovementControlParent : MonoBehaviour
     private Vector2 targetPos;
     public float XIncrement;
 
-    public float velocity;
+    
     public float speed;
+    
 
     public float maximumX_Positive;
     public float minimumX_Negative;
@@ -39,6 +40,7 @@ public class MovementControlParent : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         move = FindObjectOfType<KeyboardLerpMovement>();
         
     }
@@ -47,9 +49,16 @@ public class MovementControlParent : MonoBehaviour
     void Update()
     {
         //  transform.position = Vector2.MoveTowards(transform.position, targetPos, velocity * Time.deltaTime);
+        
+       
+            
+            transform.Translate(Vector2.down * speed * Time.deltaTime);
+        
+            
+      
+       
 
-
-        transform.Translate(Vector2.down * speed * Time.deltaTime);
+        
 
 
 

@@ -126,8 +126,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   XIncrement: 2
   velocity: 0
-  speed: 4
+  speed: 2
   maximumX_Positive: 12
   minimumX_Negative: -9
   fallTime: 0.8
-  respawnTime: 4
+  respawnTime: 7

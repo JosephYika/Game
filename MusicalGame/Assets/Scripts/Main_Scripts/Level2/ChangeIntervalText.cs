@@ -13,6 +13,7 @@ public class ChangeIntervalText : MonoBehaviour
     #region Variables
     public TextMeshProUGUI Interval;
     public List<string> intervalList;
+    public static int generateIntervalsInOrder;
     #endregion
 
     #region Unity Methods
@@ -23,9 +24,9 @@ public class ChangeIntervalText : MonoBehaviour
 
         intervalList = new List<string>();
         intervalList.Add("Minor 2nd <br><sprite=4><br>");
-        intervalList.Add("Major 2nd <br><sprite=4><br><sprite=2>");
-        intervalList.Add("Minor 2nd <br><sprite=4><br><sprite=4>");
-        intervalList.Add("Major 2nd <br><sprite=4><br><sprite=2>");
+        intervalList.Add("Major 2nd <br><sprite=2><br>");
+        intervalList.Add("Minor 2nd <br><sprite=4><br>");
+        intervalList.Add("Major 2nd <br><sprite=2><br>");
 
 
     }
@@ -39,7 +40,7 @@ public class ChangeIntervalText : MonoBehaviour
     public void GenerateNewIntervalOnTheScreen()
     {
 
-        Interval.text = intervalList[Random.Range(0,4)];
+        Interval.text = intervalList[generateIntervalsInOrder++ % intervalList.Count];
     }
 
 

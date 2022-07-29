@@ -40,11 +40,114 @@ public static class ScoreBoardStatic
             SceneManager.LoadScene("Level1_Mode2");
 
         }
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level1_Mode2") && scoreAPoint == 2) //20
+        {
+
+            SceneManager.LoadScene("Level1_Mode3");
+
+        }
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level1_Mode3") && scoreAPoint == 2) //20
+        {
+
+            SceneManager.LoadScene("Level1_Mode4");
+
+        }
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level1_Mode4") && scoreAPoint == 2) //20
+        {
+
+            SceneManager.LoadScene("Level1_Mode8_Slow");
+
+        }
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level1_Mode8_Slow") && scoreAPoint == 2) //20
+        {
+
+            SceneManager.LoadScene("Level1_Mode8_Faster");
+
+        }
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level1_Mode8_Faster") && scoreAPoint == 2) //20
+        {
+
+            SceneManager.LoadScene("Level1_Mode8_Fast");
+
+        }
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level1_Mode8_Fast") && scoreAPoint == 2) //20
+        {
+
+            SceneManager.LoadScene("Level1_IntermediaryModeBlack");
+
+        }
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level1_IntermediaryModeBlack") && scoreAPoint == 2) //20
+        {
+
+            SceneManager.LoadScene("Level1_Mode5");
+
+        }
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level1_Mode5") && scoreAPoint == 2) //20
+        {
+
+            SceneManager.LoadScene("Level1_Mode6");
+
+        }
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level1_Mode6") && scoreAPoint == 2) //20
+        {
+
+            SceneManager.LoadScene("Level1_Mode7");
+
+        }
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level1_Mode7") && scoreAPoint == 2) //20
+        {
+
+            SceneManager.LoadScene("Level1_Mode9_Slow");
+
+        }
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level1_Mode9_Slow") && scoreAPoint == 2) //20
+        {
+
+            SceneManager.LoadScene("Level1_Mode9_Faster");
+
+        }
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level1_Mode9_Faster") && scoreAPoint == 2) //20
+        {
+
+            SceneManager.LoadScene("Level1_Mode9_Fast");
+
+        }
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level1_Mode9_Fast") && scoreAPoint == 2) //20
+        {
+
+            SceneManager.LoadScene("Level1_Mode10_White_Slow");
+
+        }
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level1_Mode10_White_Slow") && scoreAPoint == 2) //20
+        {
+
+            SceneManager.LoadScene("Level1_Mode10_White_Faster");
+
+        }
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level1_Mode10_White_Faster") && scoreAPoint == 2) //20
+        {
+
+            SceneManager.LoadScene("Level1_Mode10_Black_Slow");
+
+        }
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level1_Mode10_Black_Slow") && scoreAPoint == 2) //20
+        {
+
+            SceneManager.LoadScene("Level1_Mode10_Black_Fast");
+
+        }
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level1_Mode10_Black_Fast") && scoreAPoint == 2) //20
+        {
+
+            SceneManager.LoadScene("Level1_Mode10");
+
+        }
+
 
 
     }
-    
-   
+
+
 
 
     #endregion
