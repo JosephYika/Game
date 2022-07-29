@@ -38,8 +38,8 @@ public class Level2_SpawnerStatic : MonoBehaviour
 
     public GameObject GenerateFirstKey()
     {
-         var index = Random.Range(0, Keys.Length);
-        
+      //   var index = Random.Range(0, Keys.Length);
+        var index = generateStaticKeys++ % Keys.Length;
         var posX = GenericScript.CalculatePositionFromNoteName(Keys[index].name);
         var vector2D = new Vector2(posX, transform.position.y);
         transform.position = vector2D;
@@ -52,8 +52,8 @@ public class Level2_SpawnerStatic : MonoBehaviour
     {
         DestroyKey();
         // Generate index for 'key' to instantiate
-        var index = Random.Range(0, Keys.Length);
-        
+        //  var index = Random.Range(0, Keys.Length);
+        var index = generateStaticKeys++ % Keys.Length;
         var posX = GenericScript.CalculatePositionFromNoteName(Keys[index].name);
         var vector2D = new Vector2(posX, transform.position.y);
         transform.position = vector2D;
