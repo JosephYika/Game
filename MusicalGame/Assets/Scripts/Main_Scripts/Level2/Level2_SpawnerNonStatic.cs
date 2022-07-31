@@ -93,12 +93,12 @@ public class Level2_SpawnerNonStatic : MonoBehaviour
         //var nonStaticNote = FindObjectOfType<Level2_MovementControlNonStatic>().gameObject;
         if (staticSpawner == null)
         {
-            Debug.Log(" nonStaticNote == null");
+          //  Debug.Log(" nonStaticNote == null");
         }
 
         if (note == null)
         {
-            Debug.Log(" note == null");
+         //   Debug.Log(" note == null");
         }
 
         if (staticSpawner == null || note == null)
@@ -115,15 +115,15 @@ public class Level2_SpawnerNonStatic : MonoBehaviour
 
         if (diff > (float)0.01 && diff < 5)
         {
-            Debug.Log("------------BEFORE------------}");
-            Debug.Log($"nonstatic y: {staticNote.transform.position.y}\n\t         static   y: {note.transform.position.y}");
-            Debug.Log("------------BEFORE------------}");
+            //Debug.Log("------------BEFORE------------}");
+            //Debug.Log($"nonstatic y: {staticNote.transform.position.y}\n\t         static   y: {note.transform.position.y}");
+            //Debug.Log("------------BEFORE------------}");
 
 
 
             if (staticNote.transform.position.y > note.transform.position.y)
             {
-                Debug.Log($"{note.name}  wyzej niz {staticNote.name}. Przesuwanie {staticNote.name} w gore");
+              //  Debug.Log($"{note.name}  wyzej niz {staticNote.name}. Przesuwanie {staticNote.name} w gore");
                 var newPost = new Vector2(note.transform.position.x, staticNote.transform.position.y);
                 note.transform.position = newPost;
             }
@@ -134,9 +134,9 @@ public class Level2_SpawnerNonStatic : MonoBehaviour
                 staticNote.transform.position = newPost;
             }
 
-            Debug.Log("------------AFTER------------}");
-            Debug.Log($"nonstatic y: {staticNote.transform.position.y}\n\t         static   y: {note.transform.position.y}");
-            Debug.Log("------------AFTER------------}");
+            //Debug.Log("------------AFTER------------}");
+            //Debug.Log($"nonstatic y: {staticNote.transform.position.y}\n\t         static   y: {note.transform.position.y}");
+            //Debug.Log("------------AFTER------------}");
         }
     }
 

@@ -48,7 +48,7 @@ public class Level2_MovementControlStatic : MonoBehaviour
         if (pianoKey.CompareTagsExtension())
         {
             _spawner.DestroyKey();
-            Debug.Log("STATIC : NOTE DESTROYED");
+          //  Debug.Log("STATIC : NOTE DESTROYED");
         }
     }
     #endregion
