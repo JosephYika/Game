@@ -1107,7 +1107,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 287.2, y: 65}
+  m_AnchoredPosition: {x: 280.33, y: 65}
   m_SizeDelta: {x: 95.8238, y: 61.3817}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1072351484
@@ -1218,6 +1218,7 @@ GameObject:
   - component: {fileID: 1105314137}
   - component: {fileID: 1105314139}
   - component: {fileID: 1105314138}
+  - component: {fileID: 1105314140}
   m_Layer: 5
   m_Name: IntervalOnTheScreenText
   m_TagString: Untagged
@@ -1242,7 +1243,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2975, y: 35.8343}
+  m_AnchoredPosition: {x: 2973.07, y: 35.8343}
   m_SizeDelta: {x: 247.5473, y: 182.2701}
   m_Pivot: {x: 13.6, y: 0.5}
 --- !u!114 &1105314138
@@ -1265,9 +1266,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Major 2nd <br><sprite=4>
-
-'
+  m_text: Interval
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1344,6 +1343,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1105314136}
   m_CullTransparentMesh: 1
+--- !u!114 &1105314140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1105314136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cdf0af989c37fd498e3b490c96ad8d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intervalEnum: 0
+  IntervalText: {fileID: 1105314138}
+  noteReference: {fileID: 0}
 --- !u!1 &1117229304
 GameObject:
   m_ObjectHideFlags: 0
@@ -1968,7 +1982,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2096633905}
   - component: {fileID: 2096633904}
-  - component: {fileID: 2096633906}
+  - component: {fileID: 2096633907}
   m_Layer: 0
   m_Name: Grid
   m_TagString: Untagged
@@ -2043,7 +2057,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2096633906
+--- !u!114 &2096633907
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2052,14 +2066,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2096633903}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b88ab23287fb45827c780e1cc52fd, type: 3}
+  m_Script: {fileID: 11500000, guid: cdeb21d187ffd1e438611a99b2c51a3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Interval: {fileID: 1105314138}
-  intervalListUp: []
-  intervalListDown: []
-  allIntervals: []
-  noteReference: {fileID: 0}
+  scoreText: {fileID: 1072351484}
 --- !u!4 &8591160931986143178
 Transform:
   m_ObjectHideFlags: 0

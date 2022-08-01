@@ -131,4 +131,4 @@ MonoBehaviour:
   minimumX_Negative: -9
   fallTime: 0.8
   respawnTime: 4
-  scoreOnTheScreen: {fileID: 2253486140624927673, guid: 1c16330709f798047badd0c568d9c497, type: 3}
+  distanceBtwTwoNotes: 0
