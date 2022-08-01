@@ -65,4 +65,58 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Official_Scenes/Level1/Level1_Mode10_Black_Fast.unity
     guid: bd0a031843135894888fb561af174c11
+  - enabled: 1
+    path: Assets/Scenes/Official_Scenes/Level1/Tutorials_Level1/TutorialScene0.unity
+    guid: dd28757aabbe8cc44b07faf256ce0681
+  - enabled: 1
+    path: Assets/Scenes/Official_Scenes/Level1/Tutorials_Level1/TutorialScene1.unity
+    guid: 9d1366ca394503041962a4137c3d4145
+  - enabled: 1
+    path: Assets/Scenes/Official_Scenes/Level1/Tutorials_Level1/TutorialScene2.unity
+    guid: 0dd4c083a61223d4c8e78f5b8b935fbe
+  - enabled: 1
+    path: Assets/Scenes/Official_Scenes/Level1/Tutorials_Level1/TutorialScene3.unity
+    guid: 014a42ba322683240b9644d785adaea3
+  - enabled: 1
+    path: Assets/Scenes/Official_Scenes/Level1/Tutorials_Level1/TutorialScene4.unity
+    guid: 1046a2e6b395f10419bcbc07499374e2
+  - enabled: 1
+    path: Assets/Scenes/Official_Scenes/Level1/Tutorials_Level1/TutorialScene5.unity
+    guid: dfd94e3343058274787a940ba2599168
+  - enabled: 1
+    path: Assets/Scenes/Official_Scenes/Level1/Tutorials_Level1/TutorialScene6.unity
+    guid: 7ba597a1b7dc53f43ab353b539213b1d
+  - enabled: 1
+    path: Assets/Scenes/Official_Scenes/Level1/Tutorials_Level1/TutorialScene7.unity
+    guid: f8e7cbab94db6aa4d82fd309ec076164
+  - enabled: 1
+    path: Assets/Scenes/Official_Scenes/Level1/Tutorials_Level1/TutorialScene8.unity
+    guid: 27023ba04698fdd41aab6d19375ed66b
+  - enabled: 1
+    path: Assets/Scenes/Official_Scenes/Level1/Tutorials_Level1/TutorialScene9.unity
+    guid: cc8633e29b29a97418449cd3c2803637
+  - enabled: 1
+    path: Assets/Scenes/Official_Scenes/Level1/Tutorials_Level1/TutorialScene10.unity
+    guid: 24016b9e1f89d6042937dde6493f5879
+  - enabled: 1
+    path: Assets/Scenes/Official_Scenes/Level1/Tutorials_Level1/TutorialScene11.unity
+    guid: 62b948eebc73d9f46adc11a891d29806
+  - enabled: 1
+    path: Assets/Scenes/Official_Scenes/Level1/Tutorials_Level1/TutorialScene12.unity
+    guid: f4d34730d6cdc954cad1f0b4bb8eb6ee
+  - enabled: 1
+    path: Assets/Scenes/Official_Scenes/Level1/Tutorials_Level1/TutorialScene13.unity
+    guid: f4e7f14b0f930ab429e6fc9ddecbc991
+  - enabled: 1
+    path: Assets/Scenes/Official_Scenes/Level1/Tutorials_Level1/TutorialScene14.unity
+    guid: bc9bbd177123fa54aa54f038a4eff9bd
+  - enabled: 1
+    path: Assets/Scenes/Official_Scenes/Level1/Tutorials_Level1/TutorialScene15.unity
+    guid: 35406d60530f5604397ab7122ea1b451
+  - enabled: 1
+    path: Assets/Scenes/Official_Scenes/Level1/Tutorials_Level1/TutorialScene16.unity
+    guid: 1bf8e236172520549bf48431ba8a5ca7
+  - enabled: 1
+    path: Assets/Scenes/Official_Scenes/Level1/Tutorials_Level1/TutorialScene17.unity
+    guid: 332636cf55f037d4498c95673cbaa5e8
   m_configObjects: {}
