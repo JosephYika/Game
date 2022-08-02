@@ -12,13 +12,13 @@ using TMPro;
 public class Level2_Interval : MonoBehaviour
 {
     
-    public GenericScript.Interval intervalEnum;
+    public GenericScript.Interval intervalEnum;  
 
     public TextMeshProUGUI IntervalText;
     
-    public Level2_SpawnerStatic noteReference;
+    private Level2_SpawnerStatic noteReference;
 
-    private System.Random rand;
+   
 
 
 
@@ -28,7 +28,7 @@ public class Level2_Interval : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rand = new System.Random();
+        
        
         noteReference = FindObjectOfType<Level2_SpawnerStatic>();
 
@@ -67,6 +67,36 @@ public class Level2_Interval : MonoBehaviour
             var intervalPick = Random.Range(0, intervals.Count);
             intervalEnum = intervals[intervalPick];
 
+        }
+        else if(noteReference.Note.tag == "B")
+        {
+            List<GenericScript.Interval> intervals = new List<GenericScript.Interval>();
+            intervals.Add(GenericScript.Interval.MajorSecondDown);
+            intervals.Add(GenericScript.Interval.MinorSecondDown);
+
+            var intervalPick = Random.Range(0, intervals.Count);
+            intervalEnum = intervals[intervalPick];
+        }
+        else if (noteReference.Note.tag == "ASharp")
+        {
+            List<GenericScript.Interval> intervals = new List<GenericScript.Interval>();
+            intervals.Add(GenericScript.Interval.MinorSecondUp);
+            intervals.Add(GenericScript.Interval.MinorSecondDown);
+            intervals.Add(GenericScript.Interval.MajorSecondDown);
+
+            var intervalPick = Random.Range(0, intervals.Count);
+            intervalEnum = intervals[intervalPick];
+        }
+        else
+        {
+            List<GenericScript.Interval> intervals = new List<GenericScript.Interval>();
+            intervals.Add(GenericScript.Interval.MinorSecondDown);
+            intervals.Add(GenericScript.Interval.MinorSecondUp);
+            intervals.Add(GenericScript.Interval.MajorSecondDown);
+            intervals.Add(GenericScript.Interval.MajorSecondUp);
+
+            var intervalPick = Random.Range(0, intervals.Count);
+            intervalEnum = intervals[intervalPick];
         }
 
         

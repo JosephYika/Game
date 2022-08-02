@@ -33,7 +33,7 @@ public class Level2_MovementControlStatic : MonoBehaviour
    
     private Level2_Interval intervalText;
 
-    private Level2_SpawnerNonStatic checkPoint; // static note check point - a reference to the static note 
+    private Level2_SpawnerNonStatic checkPoint; // a reference to the non static note
 
     public float distanceBtwTwoNotes; // distance between two notes 
 
@@ -61,6 +61,7 @@ public class Level2_MovementControlStatic : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector2.down * speed * Time.deltaTime);
+        
     }
 
     void OnTriggerEnter2D(Collider2D pianoKey)
@@ -68,7 +69,8 @@ public class Level2_MovementControlStatic : MonoBehaviour
 
         if (pianoKey.CompareTagsExtension())
         {
-            distanceBtwTwoNotes = transform.position.x - checkPoint.Note.transform.position.x; // calculate the actual distancec between two notes 
+
+            distanceBtwTwoNotes = checkPoint.Note.transform.position.x - transform.position.x; // calculate the actual distancec between two notes
             Debug.Log("Distance : " + distanceBtwTwoNotes.ToString("F1") + "units"); // log into console !
 
             if (Math.Abs(distanceBtwTwoNotes) > 4 || distanceBtwTwoNotes == 0)
@@ -114,7 +116,7 @@ public class Level2_MovementControlStatic : MonoBehaviour
             //   Debug.Log("NON STATIC : NOTE DESTROYED"); 
             _spawner.GenerateNewKey();
         }
-
+        intervalText.GenerateNewIntervalOnTheScreen();
 
 
     }

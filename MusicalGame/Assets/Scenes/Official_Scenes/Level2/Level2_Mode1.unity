@@ -1357,7 +1357,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   intervalEnum: 0
   IntervalText: {fileID: 1105314138}
-  noteReference: {fileID: 0}
 --- !u!1 &1117229304
 GameObject:
   m_ObjectHideFlags: 0
@@ -3267,20 +3266,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.1, y: 0.7570932}
   m_EdgeRadius: 0
---- !u!114 &8591160932997214422
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8591160932997214425}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1526fa2279ffd034cb5a3ef90335ac7e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  endPosition: {x: 0, y: 0, z: 0}
-  endPositions: []
 --- !u!4 &8591160932997214424
 Transform:
   m_ObjectHideFlags: 0
@@ -3317,7 +3302,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8591160932997214424}
-  - component: {fileID: 8591160932997214422}
   m_Layer: 0
   m_Name: Keyboard
   m_TagString: Untagged

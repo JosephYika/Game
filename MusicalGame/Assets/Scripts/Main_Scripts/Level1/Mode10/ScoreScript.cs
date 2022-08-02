@@ -13,6 +13,8 @@ public class ScoreScript : MonoBehaviour
 {
     #region Variables
     public TextMeshProUGUI scoreOnTheScreen;
+    public AudioSource failSound;
+    public AudioSource successSound;
     
     #endregion
 
@@ -33,11 +35,13 @@ public class ScoreScript : MonoBehaviour
     {
         if (note.tag == "C") // if this key collides with C note add one poissnt 
         {
+            successSound.Play();
             ScoreBoardStatic.IncrementPoints();
             
         }
         else // if it collides with any other note take away one point 
         {
+            failSound.Play();
             ScoreBoardStatic.DecrementPoints();
             
         }

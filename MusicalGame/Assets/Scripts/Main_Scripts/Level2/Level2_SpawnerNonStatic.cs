@@ -34,8 +34,8 @@ public class Level2_SpawnerNonStatic : MonoBehaviour
 
     public GameObject GenerateFirstNote()
     {
-        //   var index = UnityEngine.Random.Range(0, Keys.Length);
-        var index = 1;
+        var index = UnityEngine.Random.Range(0, Keys.Length);
+        
         var posX = GenericScript.CalculatePositionFromNoteName(Keys[index].name);
         var vector2D = new Vector2(posX, transform.position.y);
         transform.position = vector2D;
@@ -47,9 +47,9 @@ public class Level2_SpawnerNonStatic : MonoBehaviour
     public GameObject GenerateNewNote()
     {
         DestroyNote();
-        // Generate index for 'key' to instantiate
-      //  var index = UnityEngine.Random.Range(0, Keys.Length);
-        var index = 1;
+        //Generate index for 'key' to instantiate
+        var index = UnityEngine.Random.Range(0, Keys.Length);
+        
         var posX = GenericScript.CalculatePositionFromNoteName(Keys[index].name);
         var vector2D = new Vector2(posX, transform.position.y);
         transform.position = vector2D;
