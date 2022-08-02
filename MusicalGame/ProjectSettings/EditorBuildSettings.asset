@@ -203,4 +203,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Official_Scenes/Level2/Tutorials_Level2/Level2_Tutorial_Scene27.unity
     guid: fdc2dd5c4056bec42af919a83455e888
+  - enabled: 1
+    path: Assets/Scenes/Official_Scenes/Level2/Level2_Mode1.unity
+    guid: 32ca888acfaf5a84896ce622248b22a6
   m_configObjects: {}

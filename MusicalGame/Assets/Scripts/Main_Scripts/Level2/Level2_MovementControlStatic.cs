@@ -70,45 +70,41 @@ public class Level2_MovementControlStatic : MonoBehaviour
         if (pianoKey.CompareTagsExtension())
         {
 
-            distanceBtwTwoNotes = checkPoint.Note.transform.position.x - transform.position.x; // calculate the actual distancec between two notes
+            distanceBtwTwoNotes = transform.position.x - checkPoint.notePos ; // calculate the actual distancec between two notes
             Debug.Log("Distance : " + distanceBtwTwoNotes.ToString("F1") + "units"); // log into console !
 
-            if (Math.Abs(distanceBtwTwoNotes) > 4 || distanceBtwTwoNotes == 0)
+            Debug.Log("WCHODZIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII");  
+            if (distanceBtwTwoNotes == -4 && intervalText.intervalEnum == GenericScript.Interval.MajorSecondUp)
             {
-                Debug.Log("I AM HEREEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE");
-                if (ScoreBoardStatic.ScoreAPoint >= 1)
-                {
+                ScoreBoardStatic.IncrementPoints();
+                Debug.Log("Point ADDED FOR MAJOR SECOND  UPPPPPPPPPPP W GOREEEE");
+            }
+            else if (distanceBtwTwoNotes == 4 && intervalText.intervalEnum == GenericScript.Interval.MajorSecondDown)
+            {
+                ScoreBoardStatic.IncrementPoints();
+                Debug.Log("Point ADDED FOR MAJOR SECOND  DOWNNNNNNNNNNNNNN W DOOLllllllllllllllllllllllllllllll");
+
+            }
+
+            else if (distanceBtwTwoNotes == -2 && intervalText.intervalEnum == GenericScript.Interval.MinorSecondUp)
+            {
+                ScoreBoardStatic.IncrementPoints();
+                Debug.Log("Point ADDED FOR MINOR SECOND  UPPPPPPPPPPP W GOREEEE");
+            }
+            else if (distanceBtwTwoNotes == 2 && intervalText.intervalEnum == GenericScript.Interval.MinorSecondDown)
+            {
+                ScoreBoardStatic.IncrementPoints();
+                Debug.Log("Point ADDED FOR MINOR SECOND  DOWNNNNNNNNNNNNNN W DOOLllllllllllllllllllllllllllllll");
+            }
+            else if(ScoreBoardStatic.ScoreAPoint >= 1)
+            {
+               
                     ScoreBoardStatic.DecrementPoints();
-                }
+
             }
-            else
-            {
-                Debug.Log("WCHODZIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII");              if (Math.Abs(distanceBtwTwoNotes) == 4 && intervalText.intervalEnum == GenericScript.Interval.MajorSecondUp)
-                {
-                    ScoreBoardStatic.IncrementPoints();
-                    Debug.Log("Point ADDED FOR MAJOR SECOND  UPPPPPPPPPPP W GOREEEE");
-                }
-                if (distanceBtwTwoNotes == 4 && intervalText.intervalEnum == GenericScript.Interval.MajorSecondDown)
-                {
-                    ScoreBoardStatic.IncrementPoints();
-                    Debug.Log("Point ADDED FOR MAJOR SECOND  DOWNNNNNNNNNNNNNN W DOOLllllllllllllllllllllllllllllll");
-                }
+            //ScoreBoardStatic.IncrementPoints(); // add a point 
+            //Debug.Log("POOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOINTS : " + ScoreBoardStatic.ScoreAPoint.ToString());
 
-                if (distanceBtwTwoNotes == -2 && intervalText.intervalEnum == GenericScript.Interval.MinorSecondUp)
-                {
-                    ScoreBoardStatic.IncrementPoints();
-                    Debug.Log("Point ADDED FOR MINOR SECOND  UPPPPPPPPPPP W GOREEEE");
-                }
-                if (distanceBtwTwoNotes == 2 && intervalText.intervalEnum == GenericScript.Interval.MinorSecondDown)
-                {
-                    ScoreBoardStatic.IncrementPoints();
-                    Debug.Log("Point ADDED FOR MINOR SECOND  DOWNNNNNNNNNNNNNN W DOOLllllllllllllllllllllllllllllll");
-                }
-
-
-                //ScoreBoardStatic.IncrementPoints(); // add a point 
-                //Debug.Log("POOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOINTS : " + ScoreBoardStatic.ScoreAPoint.ToString());
-            }
 
             textScore.scoreText.text = ScoreBoardStatic.ScoreAPoint.ToString();
             _spawner.DestroyKey();

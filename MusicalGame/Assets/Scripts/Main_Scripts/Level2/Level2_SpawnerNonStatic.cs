@@ -15,7 +15,7 @@ public class Level2_SpawnerNonStatic : MonoBehaviour
     public GameObject[] Keys;
     private GameObject note;
     public GameObject Note { get => note; }
-
+    public float notePos;
     #endregion
 
     #region Unity Methods
@@ -23,6 +23,7 @@ public class Level2_SpawnerNonStatic : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         GenerateFirstNote();
         // Initialize new note on a board     
     }
@@ -30,6 +31,11 @@ public class Level2_SpawnerNonStatic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // check the position of x while below - 2.9 
+        if(note.transform.position.y < -2.9)
+        {
+            notePos = note.transform.position.x;
+        }
     }
 
     public GameObject GenerateFirstNote()
@@ -85,6 +91,8 @@ public class Level2_SpawnerNonStatic : MonoBehaviour
         {
             return;
         }
+
+        notePos = note.transform.position.x;
         Destroy(note);
         note = null;
     }
