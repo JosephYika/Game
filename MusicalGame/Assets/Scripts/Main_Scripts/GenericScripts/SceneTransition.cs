@@ -700,16 +700,26 @@ public class SceneTransition : MonoBehaviour
         {
 
 
+           // Exit Tutorial 
+           // OR
+           // COntinue to 2nd interval 
+            
+
+        }
+
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level2_Tutorial_Start2nd"))
+        {
+
+
             if (Input.GetKeyDown(KeyCode.RightArrow))
             {
                 playPopSound.Play();
                 SceneManager.LoadScene("Level2_Tutorial_Scene20");
             }
 
-            else if (Input.GetKeyDown(KeyCode.LeftArrow))
-            {
-                SceneManager.LoadScene("Level2_Tutorial_Scene18");
-            }
+           
+
+
 
         }
 
@@ -727,7 +737,7 @@ public class SceneTransition : MonoBehaviour
 
             else if (Input.GetKeyDown(KeyCode.LeftArrow))
             {
-                SceneManager.LoadScene("Level2_Tutorial_Scene19");
+                SceneManager.LoadScene("Level2_Tutorial_Start2nd");
             }
 
         }
@@ -747,7 +757,7 @@ public class SceneTransition : MonoBehaviour
 
             else if (Input.GetKeyDown(KeyCode.LeftArrow))
             {
-                SceneManager.LoadScene("Level2_Tutorial_Scene10");
+                SceneManager.LoadScene("Level2_Tutorial_Scene20");
             }
 
         }
@@ -867,13 +877,63 @@ public class SceneTransition : MonoBehaviour
 
 
         }
-        //if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level2_Mode1_Faster") && ScoreBoardStatic.ScoreAPoint == 2) // 20
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level2_Mode1_Faster") && ScoreBoardStatic.ScoreAPoint == 2) // 20
+        {
+
+
+
+            playPopSound.Play();
+            SceneManager.LoadScene("Level2_Mode2");
+
+
+
+
+        }
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level2_Mode2_Faster") && ScoreBoardStatic.ScoreAPoint == 2) // 20
+        {
+
+
+
+            playPopSound.Play();
+            SceneManager.LoadScene("Level2_Mode3");
+
+
+
+
+        }
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level2_Mode3") && ScoreBoardStatic.ScoreAPoint == 2) // 20
+        {
+
+
+
+            playPopSound.Play();
+            SceneManager.LoadScene("Level2_Mode3_Faster");
+
+
+
+
+        }
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level2_Mode3_Faster") && ScoreBoardStatic.ScoreAPoint == 2) // 20
+        {
+
+
+
+            playPopSound.Play();
+            SceneManager.LoadScene("Level2_Congratulations");
+
+
+
+
+        }
+
+
+        //if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level2_Congratulations") && ScoreBoardStatic.ScoreAPoint == 2) // 20
         //{
 
 
 
         //    playPopSound.Play();
-        //    SceneManager.LoadScene("Level2_Mode1_Faster");
+        //    SceneManager.LoadScene("Main_Menu");
 
 
 
@@ -881,9 +941,185 @@ public class SceneTransition : MonoBehaviour
         //}
 
 
+        // LEVEL 2 MAJOR AND MINOR 3rd 
+
+
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level2_Tutorial_Start3rd"))
+        {
+
+
+            if (Input.GetKeyDown(KeyCode.RightArrow))
+            {
+                playPopSound.Play();
+                SceneManager.LoadScene("Level2_Tutorial3rd_1");
+            }
+
+          
+
+        }
+
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level2_Tutorial3rd_1"))
+        {
+
+
+            if (Input.GetKeyDown(KeyCode.RightArrow))
+            {
+                playPopSound.Play();
+                SceneManager.LoadScene("Level2_Tutorial3rd_2");
+            }
+            else if (Input.GetKeyDown(KeyCode.LeftArrow))
+            {
+                SceneManager.LoadScene("Level2_Tutorial_Start3rd");
+            }
 
 
 
+        }
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level2_Tutorial3rd_2"))
+        {
+
+
+            if (Input.GetKeyDown(KeyCode.RightArrow))
+            {
+                playPopSound.Play();
+                SceneManager.LoadScene("Level2_Tutorial3rd_3");
+            }
+            else if (Input.GetKeyDown(KeyCode.LeftArrow))
+            {
+                SceneManager.LoadScene("Level2_Tutorial3rd_1");
+            }
+
+
+        }
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level2_Tutorial3rd_3"))
+        {
+
+
+            if (Input.GetKeyDown(KeyCode.RightArrow))
+            {
+                playPopSound.Play();
+                SceneManager.LoadScene("Level2_Mode2");
+            }
+            else if (Input.GetKeyDown(KeyCode.LeftArrow))
+            {
+                SceneManager.LoadScene("Level2_Tutorial3rd_2");
+            }
+
+
+        }
+
+
+        // Level2 Perfect 4th 
+
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level2_Tutorial4th_0"))
+        {
+
+
+            if (Input.GetKeyDown(KeyCode.RightArrow))
+            {
+                playPopSound.Play();
+                SceneManager.LoadScene("Level2_Tutorial4th_1");
+            }
+           
+
+
+        }
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level2_Tutorial4th_1"))
+        {
+
+
+            if (Input.GetKeyDown(KeyCode.RightArrow))
+            {
+                playPopSound.Play();
+                SceneManager.LoadScene("Level2_Tutorial4th_2");
+            }
+            else if (Input.GetKeyDown(KeyCode.LeftArrow))
+            {
+                SceneManager.LoadScene("Level2_Tutorial4th_0");
+            }
+
+
+        }
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level2_Tutorial4th_2"))
+        {
+
+
+            if (Input.GetKeyDown(KeyCode.RightArrow))
+            {
+                playPopSound.Play();
+                SceneManager.LoadScene("Level2_Tutorial4th_3");
+            }
+            else if (Input.GetKeyDown(KeyCode.LeftArrow))
+            {
+                SceneManager.LoadScene("Level2_Tutorial4th_1");
+            }
+
+
+        }
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level2_Tutorial4th_3"))
+        {
+
+
+            if (Input.GetKeyDown(KeyCode.RightArrow))
+            {
+                playPopSound.Play();
+                SceneManager.LoadScene("Level2_Tutorial4th_4");
+            }
+            else if (Input.GetKeyDown(KeyCode.LeftArrow))
+            {
+                SceneManager.LoadScene("Level2_Tutorial4th_2");
+            }
+
+
+        }
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level2_Tutorial4th_4"))
+        {
+
+
+            if (Input.GetKeyDown(KeyCode.RightArrow))
+            {
+                playPopSound.Play();
+                SceneManager.LoadScene("Level2_Tutorial4th_5");
+            }
+            else if (Input.GetKeyDown(KeyCode.LeftArrow))
+            {
+                SceneManager.LoadScene("Level2_Tutorial4th_3");
+            }
+
+
+        }
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level2_Tutorial4th_5"))
+        {
+
+
+            if (Input.GetKeyDown(KeyCode.RightArrow))
+            {
+                playPopSound.Play();
+                SceneManager.LoadScene("Level2_Tutorial4th_6");
+            }
+            else if (Input.GetKeyDown(KeyCode.LeftArrow))
+            {
+                SceneManager.LoadScene("Level2_Tutorial4th_4");
+            }
+
+
+        }
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level2_Tutorial4th_6"))
+        {
+
+
+            if (Input.GetKeyDown(KeyCode.RightArrow))
+            {
+                playPopSound.Play();
+                SceneManager.LoadScene("Level2_Mode3");
+            }
+            else if (Input.GetKeyDown(KeyCode.LeftArrow))
+            {
+                SceneManager.LoadScene("Level2_Tutorial4th_5");
+            }
+
+
+        }
 
     }
     #endregion
