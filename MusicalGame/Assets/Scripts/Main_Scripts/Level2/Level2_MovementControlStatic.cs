@@ -7,6 +7,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class Level2_MovementControlStatic : MonoBehaviour
@@ -69,44 +70,105 @@ public class Level2_MovementControlStatic : MonoBehaviour
 
         if (pianoKey.CompareTagsExtension())
         {
+            // MINOR AND MAJOR 2NDS
+            if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level2_Mode1") || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level2_Mode1_Faster"))
+            {
+                distanceBtwTwoNotes = transform.position.x - checkPoint.notePos; // calculate the actual distancec between two notes
+                Debug.Log("Distance : " + distanceBtwTwoNotes.ToString("F1") + "units"); // log into console !
 
-            distanceBtwTwoNotes = transform.position.x - checkPoint.notePos ; // calculate the actual distancec between two notes
-            Debug.Log("Distance : " + distanceBtwTwoNotes.ToString("F1") + "units"); // log into console !
+                Debug.Log("WCHODZIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII");
+                if (distanceBtwTwoNotes == -4 && intervalText.intervalEnum == GenericScript.Interval.MajorSecondUp)
+                {
+                    ScoreBoardStatic.IncrementPoints();
+                    Debug.Log("Point ADDED FOR MAJOR SECOND  UPPPPPPPPPPP W GOREEEE");
+                }
+                else if (distanceBtwTwoNotes == 4 && intervalText.intervalEnum == GenericScript.Interval.MajorSecondDown)
+                {
+                    ScoreBoardStatic.IncrementPoints();
+                    Debug.Log("Point ADDED FOR MAJOR SECOND  DOWNNNNNNNNNNNNNN W DOOLllllllllllllllllllllllllllllll");
 
-            Debug.Log("WCHODZIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII");  
-            if (distanceBtwTwoNotes == -4 && intervalText.intervalEnum == GenericScript.Interval.MajorSecondUp)
-            {
-                ScoreBoardStatic.IncrementPoints();
-                Debug.Log("Point ADDED FOR MAJOR SECOND  UPPPPPPPPPPP W GOREEEE");
-            }
-            else if (distanceBtwTwoNotes == 4 && intervalText.intervalEnum == GenericScript.Interval.MajorSecondDown)
-            {
-                ScoreBoardStatic.IncrementPoints();
-                Debug.Log("Point ADDED FOR MAJOR SECOND  DOWNNNNNNNNNNNNNN W DOOLllllllllllllllllllllllllllllll");
+                }
 
-            }
+                else if (distanceBtwTwoNotes == -2 && intervalText.intervalEnum == GenericScript.Interval.MinorSecondUp)
+                {
+                    ScoreBoardStatic.IncrementPoints();
+                    Debug.Log("Point ADDED FOR MINOR SECOND  UPPPPPPPPPPP W GOREEEE");
+                }
+                else if (distanceBtwTwoNotes == 2 && intervalText.intervalEnum == GenericScript.Interval.MinorSecondDown)
+                {
+                    ScoreBoardStatic.IncrementPoints();
+                    Debug.Log("Point ADDED FOR MINOR SECOND  DOWNNNNNNNNNNNNNN W DOOLllllllllllllllllllllllllllllll");
+                }
+                else if (ScoreBoardStatic.ScoreAPoint >= 1)
+                {
 
-            else if (distanceBtwTwoNotes == -2 && intervalText.intervalEnum == GenericScript.Interval.MinorSecondUp)
-            {
-                ScoreBoardStatic.IncrementPoints();
-                Debug.Log("Point ADDED FOR MINOR SECOND  UPPPPPPPPPPP W GOREEEE");
-            }
-            else if (distanceBtwTwoNotes == 2 && intervalText.intervalEnum == GenericScript.Interval.MinorSecondDown)
-            {
-                ScoreBoardStatic.IncrementPoints();
-                Debug.Log("Point ADDED FOR MINOR SECOND  DOWNNNNNNNNNNNNNN W DOOLllllllllllllllllllllllllllllll");
-            }
-            else if(ScoreBoardStatic.ScoreAPoint >= 1)
-            {
-               
                     ScoreBoardStatic.DecrementPoints();
 
+                }
             }
-            //ScoreBoardStatic.IncrementPoints(); // add a point 
-            //Debug.Log("POOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOINTS : " + ScoreBoardStatic.ScoreAPoint.ToString());
+                
 
+            // MINOR AND MAJOR 3RDS
+            if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level2_Mode2") || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level2_Mode2_Faster"))
+            {
+                distanceBtwTwoNotes = transform.position.x - checkPoint.notePos; // calculate the actual distancec between two notes
+                if (distanceBtwTwoNotes == -8 && intervalText.intervalEnum == GenericScript.Interval.MajorThirdUp)
+                {
+                    ScoreBoardStatic.IncrementPoints();
+                    Debug.Log("Point ADDED FOR MAJOR THIRD  UPPPPPPPPPPP W GOREEEE");
+                }
+                else if (distanceBtwTwoNotes == 8 && intervalText.intervalEnum == GenericScript.Interval.MajorThirdDown)
+                {
+                    ScoreBoardStatic.IncrementPoints();
+                    Debug.Log("Point ADDED FOR MAJOR THIRD  DOWNNNNNNNNNNNNNN W DOOLllllllllllllllllllllllllllllll");
 
-            textScore.scoreText.text = ScoreBoardStatic.ScoreAPoint.ToString();
+                }
+
+                else if (distanceBtwTwoNotes == -6 && intervalText.intervalEnum == GenericScript.Interval.MinorThirdUp)
+                {
+                    ScoreBoardStatic.IncrementPoints();
+                    Debug.Log("Point ADDED FOR MINOR THIRD  UPPPPPPPPPPP W GOREEEE");
+                }
+                else if (distanceBtwTwoNotes == 6 && intervalText.intervalEnum == GenericScript.Interval.MinorThirdDown)
+                {
+                    ScoreBoardStatic.IncrementPoints();
+                    Debug.Log("Point ADDED FOR MINOR THIRD  DOWNNNNNNNNNNNNNN W DOOLllllllllllllllllllllllllllllll");
+                }
+                else if (ScoreBoardStatic.ScoreAPoint >= 1)
+                {
+
+                    ScoreBoardStatic.DecrementPoints();
+
+                }
+
+            }
+
+            // Perfect Fourth 
+
+            if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level2_Mode3") || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level2_Mode3_Faster"))
+            {
+
+                distanceBtwTwoNotes = transform.position.x - checkPoint.notePos; // calculate the actual distancec between two notes
+                if (distanceBtwTwoNotes == -10 && intervalText.intervalEnum == GenericScript.Interval.PerfectFourthUp)
+                {
+                    ScoreBoardStatic.IncrementPoints();
+                    Debug.Log("Point ADDED FOR FOURTH  UPPPPPPPPPPP W GOREEEE");
+                }
+                else if (distanceBtwTwoNotes == 10 && intervalText.intervalEnum == GenericScript.Interval.PerfectFourthDown)
+                {
+                    ScoreBoardStatic.IncrementPoints();
+                    Debug.Log("Point ADDED FOR FOURTH DOWNNNNNNNNNNNNNN W DOOLllllllllllllllllllllllllllllll");
+
+                }
+                else if (ScoreBoardStatic.ScoreAPoint >= 1)
+                {
+
+                    ScoreBoardStatic.DecrementPoints();
+
+                }
+            }
+
+                textScore.scoreText.text = ScoreBoardStatic.ScoreAPoint.ToString();
             _spawner.DestroyKey();
 
             //   Debug.Log("NON STATIC : NOTE DESTROYED"); 

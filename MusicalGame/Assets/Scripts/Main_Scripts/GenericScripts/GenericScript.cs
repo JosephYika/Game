@@ -147,6 +147,10 @@ public static class GenericScript
     //    allIntervals.Add("Minor 2nd <br><sprite=2><br>");
     //    allIntervals.Add("Major 2nd <br><sprite=2><br>");
 
+
+
+    // return the string based on the specific element from an enum that is passed as an argument in that function
+    // argument ( interval ) of type enum ---> IntervalChange(interval) ---> checks the assigned string to this enum and returns it 
     public static string IntervalChange(Interval interval)
     {
         return interval switch 
@@ -158,6 +162,10 @@ public static class GenericScript
             Interval.MajorSecondUp => "Major 2nd <br><sprite=4><br>",
             Interval.MinorThirdDown => "Minor 3rd <br><sprite=2><br>",
             Interval.MinorThirdUp => "Minor 3rd <br><sprite=4><br>",
+            Interval.MajorThirdDown => "Major 3rd <br><sprite=2><br>",
+            Interval.MajorThirdUp => "Major 3rd <br><sprite=4><br>",
+            Interval.PerfectFourthDown => "Perfect 4th <br><sprite=2><br>",
+            Interval.PerfectFourthUp => "Perfect 4th <br><sprite=4><br>",
             _ => "Oops, Wrong Interval"
 
 
