@@ -133,6 +133,17 @@ public static class GenericScript
         DiminishedFifthDown, 
         DiminishedFifthUp,
     }
+    public enum Chord
+    { 
+        C_MajorUp,
+        D_MajorUp,
+        E_MajorUp, 
+        CSharp_MajorUp,
+        DShapr_MajorUp,
+
+    
+    }
+
 
     //intervalListUp.Add("Minor 2nd <br><sprite=4><br>");
     //    intervalListUp.Add("Major 2nd <br><sprite=4><br>");
@@ -167,6 +178,25 @@ public static class GenericScript
             Interval.PerfectFourthDown => "Perfect 4th <br><sprite=2><br>",
             Interval.PerfectFourthUp => "Perfect 4th <br><sprite=4><br>",
             _ => "Oops, Wrong Interval"
+
+
+
+
+        };
+
+    }
+
+    public static string ChordChange(Chord chord)
+    {
+        return chord switch
+        {
+
+            Chord.C_MajorUp => "C Major <br><sprite=4><br>",
+            Chord.D_MajorUp => "D Major <br><sprite=4><br>",
+            Chord.E_MajorUp => "E Major <br><sprite=4><br>",
+            Chord.CSharp_MajorUp => "C# Major<br><sprite=4><br>",
+            Chord.DShapr_MajorUp => "D# Major<br><sprite=4><br>",
+            _ => "Oops, Wrong Chord"
 
 
 
