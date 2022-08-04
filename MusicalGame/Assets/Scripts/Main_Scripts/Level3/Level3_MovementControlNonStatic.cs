@@ -120,7 +120,7 @@ public class Level3_MovementControlNonStatic : MonoBehaviour
                 ScoreBoardStatic.IncrementPoints();
                 Debug.Log("Point ADDED FOR E MAJOR  UPPPPPPPPPPP W GOREEEE");
             }
-            else if (distanceBtwTwoNotes == -6  && chordText.chordEnum == GenericScript.Chord.CSharp_MajorUp)
+            else if (distanceBtwTwoNotes == -6 )
             {
                 ScoreBoardStatic.IncrementPoints();
                 Debug.Log("Point ADDED FOR C# MAJOR  UPPPPPPPPPPP W GOREEEE");
