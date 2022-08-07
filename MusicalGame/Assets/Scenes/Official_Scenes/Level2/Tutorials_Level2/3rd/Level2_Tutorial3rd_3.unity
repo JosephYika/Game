@@ -3618,8 +3618,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -6.3399353, y: 39.279984}
-  m_SizeDelta: {x: 9.780117, y: 185.64003}
+  m_AnchoredPosition: {x: -3.0849304, y: 39.279984}
+  m_SizeDelta: {x: 3.2701387, y: 185.64003}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1813210146
 MonoBehaviour:
@@ -3641,7 +3641,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Level 2 : Perfect 4th\n\nMove   \n"
+  m_text: "Level 2 : Major & Minor 3rd\n\nMove   \n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
