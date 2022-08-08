@@ -266,4 +266,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Official_Scenes/Level1/Level1_Mode10.unity
     guid: 281984d951a10b54694d1f778be30cc9
+  - enabled: 1
+    path: Assets/Scenes/Official_Scenes/GenericScenes/StartMenu.unity
+    guid: 024d97282d5a22244ba056bb319f61b4
   m_configObjects: {}
