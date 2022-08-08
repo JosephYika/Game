@@ -69,4 +69,38 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("Level3_Mode0");
     }
+
+    public void LoadLevel1_Mode10()
+    {
+        SceneManager.LoadScene("Level1_Mode10");
+    }
+
+    public void LoadLevel1_IntermediaryModeWhite()
+    {
+        SceneManager.LoadScene("Level1_IntermediaryModeWhite");
+    }
+    public void LoadLevel1_Mode8_Slow()
+    {
+        SceneManager.LoadScene("Level1_Mode8_Slow");
+    }
+
+    public void LoadLevel1_Mode10_White_Slow()
+    {
+        SceneManager.LoadScene("Level1_Mode10_White_Slow");
+    }
+
+    public void LoadLevel1_IntermediaryModeBlack()
+    {
+        SceneManager.LoadScene("Level1_IntermediaryModeBlack");
+    }
+
+    public void LoadLevel1_Mode9_Slow()
+    {
+        SceneManager.LoadScene("Level1_Mode9_Slow");
+    }
+
+    public void LoadLevel1Mode10_Black_Slow()
+    {
+        SceneManager.LoadScene("Level1_Mode10_Black_Slow");
+    }
 }
