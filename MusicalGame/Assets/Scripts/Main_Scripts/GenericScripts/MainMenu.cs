@@ -103,4 +103,30 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("Level1_Mode10_Black_Slow");
     }
+
+
+    // CHORDS
+    public void LoadChordBasics()
+    {
+        SceneManager.LoadScene("TutorialLevel3_0");
+    }
+    public void LoadChordMajorTutorial()
+    {
+        SceneManager.LoadScene("TutorialLevel3_6");
+    }
+    public void LoadChordMinorTutorial()
+    {
+        SceneManager.LoadScene("TutorialLevel3_11");
+    }
+
+    public void LoadChordMajorGameplay()
+    {
+        SceneManager.LoadScene("Level3_MajorChordStart");
+    }
+    public void LoadChordMinorGameplay()
+    {
+        SceneManager.LoadScene("Level3_MinorChordStart");
+    }
+
+
 }

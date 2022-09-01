@@ -137,9 +137,44 @@ public class Level3_MovementControlNonStatic : MonoBehaviour
 
             }
 
+            // MINOR CHORDS
+
+            if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level3_Mode1Minor"))
+            {
+                
+                if (distanceBtwTwoNotes == -8 && chordText.chordEnum == GenericScript.Chord.C_MinorUp)
+                {
+
+                    ScoreBoardStatic.IncrementPoints();
+                    Debug.Log("Point ADDED FOR C Minor  UPPPPPPPPPPP W GOREEEE");
 
 
+                }
+                else if (distanceBtwTwoNotes == -8 && chordText.chordEnum == GenericScript.Chord.D_MinorUp)
+                {
+                    ScoreBoardStatic.IncrementPoints();
+                    Debug.Log("Point ADDED FOR D Minor  UPPPPPPPPPPP W GOREEEE");
+                }
+                else if (distanceBtwTwoNotes == -8 && chordText.chordEnum == GenericScript.Chord.E_MinorUp)
+                {
+                    ScoreBoardStatic.IncrementPoints();
+                    Debug.Log("Point ADDED FOR E Minor UPPPPPPPPPPP W GOREEEE");
+                }
+   
+                else if (distanceBtwTwoNotes == -8 && chordText.chordEnum == GenericScript.Chord.DSharp_MinorUp)
+                {
+                    ScoreBoardStatic.IncrementPoints();
+                    Debug.Log("Point ADDED FOR D# Minor  UPPPPPPPPPPP W GOREEEE");
+                }
+                else if (ScoreBoardStatic.ScoreAPoint >= 1)
+                {
+                   
+                    ScoreBoardStatic.DecrementPoints();
 
+                }
+                textScore.scoreText.text = ScoreBoardStatic.ScoreAPoint.ToString();
+
+            }
 
 
             textScore.scoreText.text = ScoreBoardStatic.ScoreAPoint.ToString();

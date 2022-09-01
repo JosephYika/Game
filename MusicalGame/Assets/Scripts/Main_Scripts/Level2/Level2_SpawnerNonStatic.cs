@@ -31,7 +31,7 @@ public class Level2_SpawnerNonStatic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // check the position of x while below - 2.9 
+        // check the position of note while below - 2.9 
         if(note.transform.position.y < -2.9)
         {
             notePos = note.transform.position.x;

@@ -76,7 +76,7 @@ public class Level2_MovementControlStatic : MonoBehaviour
                 distanceBtwTwoNotes = transform.position.x - checkPoint.notePos; // calculate the actual distancec between two notes
                 Debug.Log("Distance : " + distanceBtwTwoNotes.ToString("F1") + "units"); // log into console !
 
-                Debug.Log("WCHODZIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII");
+               
                 if (distanceBtwTwoNotes == -4 && intervalText.intervalEnum == GenericScript.Interval.MajorSecondUp)
                 {
                     ScoreBoardStatic.IncrementPoints();

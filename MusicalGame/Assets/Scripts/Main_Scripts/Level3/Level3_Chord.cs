@@ -96,14 +96,54 @@ public class Level3_Chord : MonoBehaviour
         }
 
 
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level3_Mode1Minor"))
+        {
+            if (noteReference.Note.tag == "C")
+            {
+
+                List<GenericScript.Chord> chords = new List<GenericScript.Chord>();
+                chords.Add(GenericScript.Chord.C_MinorUp);
+
+
+                var chordPick = Random.Range(0, chords.Count);
+                chordEnum = chords[chordPick];
+
+
+            }
+            else if (noteReference.Note.tag == "D")
+            {
+                List<GenericScript.Chord> chords = new List<GenericScript.Chord>();
+                chords.Add(GenericScript.Chord.D_MinorUp);
+
+
+                var chordPick = Random.Range(0, chords.Count);
+                chordEnum = chords[chordPick];
+            }
+            else if (noteReference.Note.tag == "E")
+            {
+                List<GenericScript.Chord> chords = new List<GenericScript.Chord>();
+                chords.Add(GenericScript.Chord.E_MinorUp);
+
+
+                var chordPick = Random.Range(0, chords.Count);
+                chordEnum = chords[chordPick];
+            }
+            else if (noteReference.Note.tag == "DSharp")
+            {
+                List<GenericScript.Chord> chords = new List<GenericScript.Chord>();
+                chords.Add(GenericScript.Chord.DSharp_MinorUp);
+
+
+                var chordPick = Random.Range(0, chords.Count);
+                chordEnum = chords[chordPick];
+            }
+        }
 
 
 
 
 
-
-
-        chordText.text = GenericScript.ChordChange(chordEnum);
+            chordText.text = GenericScript.ChordChange(chordEnum);
     }
 
 

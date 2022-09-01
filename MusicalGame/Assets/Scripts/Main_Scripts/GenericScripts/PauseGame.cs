@@ -33,6 +33,7 @@ public class PauseGame : MonoBehaviour
                 PauseTheGame();
             }
         }
+       
     }
 
 

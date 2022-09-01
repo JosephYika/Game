@@ -44,7 +44,7 @@ public class KeyboardLerpMovement : MonoBehaviour
     public void MovetoNextPosition()
     {
        
-        Debug.Log(transform.position.x + ": Pozycja X ");
+        Debug.Log(transform.position.x + ": Position X ");
         startPosition = transform.position;
         elapsedTime = elapsedTime + Time.deltaTime;
         float percentageComplete = elapsedTime / desiredDuration;

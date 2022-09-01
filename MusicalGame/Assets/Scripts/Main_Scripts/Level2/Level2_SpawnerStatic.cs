@@ -12,9 +12,9 @@ public class Level2_SpawnerStatic : MonoBehaviour
     private GameObject note;
     public GameObject Note { get { return note; } }
 
-    private float minimumX_Negative;
-    private float maximumX_Positive;
-    private float _xIncrement;
+    //private float minimumX_Negative;
+    //private float maximumX_Positive;
+    //private float _xIncrement;
     public static int generateStaticKeys;
     #endregion
 
@@ -38,7 +38,7 @@ public class Level2_SpawnerStatic : MonoBehaviour
 
     public GameObject GenerateFirstKey()
     {
-        //   var index = Random.Range(0, Keys.Length);
+        
         var index = generateStaticKeys++ % Keys.Length;
         
         var posX = GenericScript.CalculatePositionFromNoteName(Keys[index].name);

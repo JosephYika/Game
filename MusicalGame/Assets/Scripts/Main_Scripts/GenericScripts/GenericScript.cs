@@ -140,6 +140,10 @@ public static class GenericScript
         E_MajorUp, 
         CSharp_MajorUp,
         DShapr_MajorUp,
+        C_MinorUp,
+        D_MinorUp,
+        E_MinorUp,
+        DSharp_MinorUp
 
     
     }
@@ -196,6 +200,11 @@ public static class GenericScript
             Chord.E_MajorUp => "E Major <br><sprite=4><br>",
             Chord.CSharp_MajorUp => "C# Major<br><sprite=4><br>",
             Chord.DShapr_MajorUp => "D# Major<br><sprite=4><br>",
+
+            Chord.C_MinorUp => "C Minor <br><sprite=4><br>",
+            Chord.D_MinorUp => "D Minor <br><sprite=4><br>",
+            Chord.E_MinorUp => "E Minor <br><sprite=4><br>",    
+            Chord.DSharp_MinorUp => "D# Minor<br><sprite=4><br>",
             _ => "Oops, Wrong Chord"
 
 
